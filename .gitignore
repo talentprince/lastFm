@@ -1,4 +1,4 @@
-lastFm/src/fm/last/android/PrivateAPIKey.java
+lastFm/src/main/java/fm/last/android/PrivateAPIKey.java
 
 # Built application files
 *.apk

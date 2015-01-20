@@ -305,6 +305,7 @@ public class Profile extends ActivityGroup {
 				public void onClick(DialogInterface dialog, int which) {
 					AccountManager am = AccountManager.get(Profile.this);
 					Account[] accounts = am.getAccountsByType(getString(R.string.ACCOUNT_TYPE));
+                    //show or hide "userVisibility" trigger in Account detail
 					ContentResolver.setIsSyncable(accounts[0], CalendarContract.AUTHORITY, 1);
 		            ContentResolver.setSyncAutomatically(accounts[0], CalendarContract.AUTHORITY, true);
 		            showSyncPrompts();
